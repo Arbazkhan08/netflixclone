@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    background-image: url("bg2.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 780px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    border-bottom: 2px solid rgb(80, 80, 80);
+}
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+.Container1{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 450px;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    padding: 8px 0px 0px 16px;
+}
+.logo{
+    width: 220px;
+    margin: -8px 0px 0px -16px;
+}
+.main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 450px;
+    height: 550px;
+    background-color: #000000bf;
+    color: white;
+    margin-top: 100px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.main2:hover{
+    transition: 0.3s;
+    border: 3px solid white;
+}
+
+h1{
+    justify-content: center;
+    margin-left: 20px;
+}
+.signin, input{
+    margin-top: 50px;
+    width: 80%; 
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+}
+button{
+    background-color: red;
+    color: white;
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    margin-left: 21px;
+}
+button:hover{
+    transition: 0.3s;
+    background-color: rgb(146, 0, 0);
+    color: white;
+    font-weight: bold;
+}
+.mark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+}
+.remember-me-label{
+    margin-right: 100px;
+}
+.mark, #rememberMe{
+    width: 260px;
+    height: 50px;
+}
